@@ -1,0 +1,5 @@
+# Gazebo Harmonic Python bindings
+gazebo-harmonic-python
+
+# Alternative if the above doesn't work, you might need to install from source:
+# See: https://github.com/gazebosim/gz-harmonic/tree/main/python 

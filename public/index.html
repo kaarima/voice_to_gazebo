@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Control Dashboard</title>
+  <link href="/tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+  <div class="w-full max-w-xl p-6 bg-white rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold mb-4 text-center">Robot Control Dashboard</h1>
+    <div id="robot-state" class="mb-6 p-4 bg-gray-50 rounded border border-gray-200">
+      <div class="flex justify-between mb-2">
+        <span>Status:</span> <span id="status" class="font-semibold">Idle</span>
+      </div>
+      <div class="flex justify-between mb-2">
+        <span>Last Command:</span> <span id="last-command">None</span>
+      </div>
+      <div class="flex justify-between mb-2">
+        <span>Battery:</span> <span id="battery">100%</span>
+      </div>
+      <div class="flex justify-between">
+        <span>Position:</span> <span id="position">(0, 0, 0°)</span>
+      </div>
+    </div>
+    <button id="voice-btn" class="w-full py-3 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75v1.5m0 0a6.75 6.75 0 01-6.75-6.75h1.5A5.25 5.25 0 0012 19.5a5.25 5.25 0 005.25-5.25h1.5A6.75 6.75 0 0112 20.25zm0 0V18.75m0-13.5a3 3 0 013 3v6a3 3 0 01-6 0v-6a3 3 0 013-3z" />
+      </svg>
+      <span id="voice-btn-label">Send Voice Command</span>
+    </button>
+    <p id="voice-status" class="text-center text-gray-500 mt-2"></p>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html> 
