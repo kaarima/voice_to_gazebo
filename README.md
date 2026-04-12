@@ -37,7 +37,7 @@ This system enables real-time voice control of a robot in Gazebo Harmonic withou
 
 ### 1. Clone and Setup
 ```bash
-git clone <your-repo>
+git clone <repo name>
 cd voice_to_gazebo
 npm install
 ```
