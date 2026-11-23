@@ -2,7 +2,7 @@
 
 A complete voice-controlled robot simulation system that allows you to control a robot in Gazebo using voice commands through a web interface.
 
-## 🎯 Overview
+## Overview
 
 This system enables real-time voice control of a robot in Gazebo Harmonic without requiring ROS. It uses:
 - **Web Speech Recognition** for voice input
@@ -10,7 +10,7 @@ This system enables real-time voice control of a robot in Gazebo Harmonic withou
 - **Python Controller** for Gazebo integration
 - **Gazebo Harmonic** for robot simulation
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────┐    WebSocket    ┌─────────────────┐    TCP Socket    ┌─────────────────┐
@@ -25,7 +25,7 @@ This system enables real-time voice control of a robot in Gazebo Harmonic withou
                                                                          └─────────────────┘
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Ubuntu 22.04+** (tested on Ubuntu 22.04)
 - **Gazebo Harmonic** installed
@@ -33,7 +33,7 @@ This system enables real-time voice control of a robot in Gazebo Harmonic withou
 - **Python 3.8+**
 - **Microphone** for voice input
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone and Setup
 ```bash
@@ -75,7 +75,7 @@ gz sim fixed_robot_world.sdf
 | `"right"` | Turn right | 1.5s | ~69° |
 | `"stop"` | Stop immediately | - | - |
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 voice_to_gazebo/
@@ -177,7 +177,7 @@ gz topic -t /cmd_vel -m gz.msgs.Twist -p 'linear: {x: 1.0}'
 - **Movement Precision**: ±0.1m for forward/backward, ±5° for turns
 - **System Stability**: Continuous operation for hours
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - [ ] Add more complex commands (circle, square patterns)
 - [ ] Implement obstacle avoidance
@@ -207,4 +207,3 @@ For issues and questions:
 
 ---
 
-**Happy Voice-Controlled Robot Programming! 🤖🎤** 
