@@ -186,11 +186,11 @@ gz topic -t /cmd_vel -m gz.msgs.Twist -p 'linear: {x: 1.0}'
 - [ ] Voice feedback for robot status
 - [ ] Mobile app interface
 
-## 📝 License
+## License
 
 This project is open source. Feel free to modify and distribute.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -198,7 +198,7 @@ This project is open source. Feel free to modify and distribute.
 4. Test thoroughly
 5. Submit a pull request
 
-## 📞 Support
+##  Support
 
 For issues and questions:
 - Check the troubleshooting section
